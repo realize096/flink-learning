@@ -12,7 +12,7 @@
     <artifactId>flink-learning-connectors-flume</artifactId>
 
     <properties>
-        <flume-ng.version>1.9.0</flume-ng.version>
+        <flume-ng.version>1.10.0</flume-ng.version>
     </properties>
 
     <dependencies>
@@ -43,12 +43,10 @@
                         <configuration>
                             <transformers>
 
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>com.zhisheng.connectors.flume.Main</mainClass>
                                 </transformer>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
                                     <resource>reference.conf</resource>
                                 </transformer>
                             </transformers>
