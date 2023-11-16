@@ -12,7 +12,7 @@
     <artifactId>flink-learning-connectors-clickhouse</artifactId>
 
     <properties>
-        <async.client.version>2.0.39</async.client.version>
+        <async.client.version>2.10.5</async.client.version>
         <typesafe.config.version>1.3.3</typesafe.config.version>
     </properties>
 
