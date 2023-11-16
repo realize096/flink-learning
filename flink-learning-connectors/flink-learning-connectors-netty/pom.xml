@@ -15,7 +15,7 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
-            <version>4.1.6.Final</version>
+            <version>4.1.44.Final</version>
         </dependency>
     </dependencies>
 
@@ -39,12 +39,10 @@
                         <configuration>
                             <transformers>
 
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>com.zhisheng.connectors.netty.Main</mainClass>
                                 </transformer>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
                                     <resource>reference.conf</resource>
                                 </transformer>
                             </transformers>
