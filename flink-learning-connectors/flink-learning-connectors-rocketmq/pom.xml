@@ -12,7 +12,7 @@
     <artifactId>flink-learning-connectors-rocketmq</artifactId>
 
     <properties>
-        <rocketmq.version>4.7.1</rocketmq.version>
+        <rocketmq.version>4.9.8</rocketmq.version>
     </properties>
 
     <dependencies>
@@ -58,12 +58,10 @@
                         <configuration>
                             <transformers>
 
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>com.zhisheng.connectors.rocketmq.example.RocketMQFlinkExample</mainClass>
                                 </transformer>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
                                     <resource>reference.conf</resource>
                                 </transformer>
                             </transformers>
