@@ -1,5 +1,5 @@
 # use openjdk for more java tools
-FROM openjdk:8u181
+FROM openjdk:8-jdk
 
 # Install dependencies
 RUN set -ex; \
