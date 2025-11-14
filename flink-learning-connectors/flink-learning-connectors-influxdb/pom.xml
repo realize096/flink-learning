@@ -11,7 +11,7 @@
 
     <artifactId>flink-learning-connectors-influxdb</artifactId>
     <properties>
-        <influxdb-client.version>2.7</influxdb-client.version>
+        <influxdb-client.version>2.23</influxdb-client.version>
     </properties>
 
     <dependencies>
@@ -41,12 +41,10 @@
                         <configuration>
                             <transformers>
 
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>com.zhisheng.connectors.influxdb.Main</mainClass>
                                 </transformer>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
                                     <resource>reference.conf</resource>
                                 </transformer>
                             </transformers>
